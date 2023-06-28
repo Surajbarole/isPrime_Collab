@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class javaBasics {
+    public static void isPrime(int num){
+        int count=0;
+        for (int i=1 ;i<=Math.sqrt(num)+1;i++){
+            if (num%i==0){
+                count++;
+            }
+        }
+        if(count>1){
+            System.out.println("it is prime number");
+        }else {
+            System.out.println("not a Prime Number");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+            int num=sc.nextInt();
+            System.out.println(isPrime(num));
+        }
+        
+}
