@@ -9,7 +9,7 @@ function findTax(salary) {
         tax = salary * 0.1;
         break;
       case (salary > 1000000 && salary <= 1500000):
-        tax = salary * 0.2;
+        tax = salary * 0.1;
         break;
       case (salary > 1500000):
         tax = salary * 0.3;
